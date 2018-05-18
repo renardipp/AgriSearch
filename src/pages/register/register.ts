@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController  } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 
@@ -16,6 +16,11 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class RegisterPage {
 
+  @ViewChild ('nama') name;
+  @ViewChild ('hp') nohp;
+  @ViewChild ('alamat') alamat;
+  @ViewChild ('sandi') katasandi;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
@@ -26,11 +31,13 @@ export class RegisterPage {
 SignUp(){
 
   let alert = this.alertCtrl.create({
-      title: 'Login Sukses Cuy',
-      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
+      title: 'Register Sukses Cuy',
       buttons: ['OK']
     });
     alert.present();
+
+    console.log(this.name.value, this.nohp.value, this.alamat.value, this.katasandi.value);
+
     this.navCtrl.push(TabsPage);
 }
 
