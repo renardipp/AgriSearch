@@ -13,6 +13,8 @@ import { ProfilePage } from '../pages/profile/profile';
 import { RegisterPage } from '../pages/register/register';
 import { SlidesPage } from '../pages/slides/slides';
 import { TabsPage } from '../pages/tabs/tabs';
+import { FormPage } from '../pages/form/form';
+import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +30,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     RegisterPage,
     SlidesPage,
-    TabsPage
+    TabsPage,
+    FormPage,
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     RegisterPage,
     SlidesPage,
-    TabsPage
+    TabsPage,
+    FormPage,
+    ListPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { FirstPage } from '../first/first';
+import { LoginPage } from '../login/login';
 
 
 
@@ -36,9 +36,9 @@ export class SlidesPage {
   ];
 
 
-  openFirstPage(){
+  openLoginPage(){
 
-    this.navCtrl.push(FirstPage);
+    this.navCtrl.push(LoginPage);
 
   }
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+import { FormPage } from '../form/form';
 
 @Component({
   selector: 'page-home',
@@ -12,7 +12,9 @@ export class HomePage {
 
   }
 
-
+openFormPage(){
+  this.navCtrl.push(FormPage);
+}
 
 
 }

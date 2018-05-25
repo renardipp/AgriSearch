@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ViewPage } from '../view/view';
+
 /**
- * Generated class for the PesananPage page.
+ * Generated class for the ListPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { ViewPage } from '../view/view';
 
 @IonicPage()
 @Component({
-  selector: 'page-pesanan',
-  templateUrl: 'pesanan.html',
+  selector: 'page-list',
+  templateUrl: 'list.html',
 })
-export class PesananPage {
+export class ListPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PesananPage');
+    console.log('ionViewDidLoad ListPage');
   }
-openViewPage(){
 
-    this.navCtrl.push(ViewPage);
-
-  }
 }
