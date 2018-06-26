@@ -1,8 +1,15 @@
 .tutorial-page {
 
+  height: 100%;
+  width: 100%;
+
+background: linear-gradient(160deg, #0cebeb ,#20e3b2,#29ffc6 );
+
   .toolbar-background {
-    background: #fff;
-    border-color: transparent;
+    height: auto;
+      width: auto;
+      background: linear-gradient(160deg, #0cebeb ,#20e3b2,#29ffc6 );
+      border-color: transparent;
   }
 
   .slide-zoom {
