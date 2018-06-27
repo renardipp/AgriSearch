@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DaftarPetaniPage } from '../daftar-petani/daftar-petani';
 
 /**
  * Generated class for the FormPage page.
@@ -20,6 +21,13 @@ export class FormPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FormPage');
+  }
+   public event = {
+    month: '2018-01-01',
+    timeEnds: '2018-02-01'
+  }
+  opendaftarpetani(){
+    this.navCtrl.push(DaftarPetaniPage);
   }
 
 }

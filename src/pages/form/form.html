@@ -16,7 +16,7 @@
 <ion-content padding>
 <ion-list>
   <ion-item>
-    <ion-label stacked>Kota/Kabupaten</ion-label>
+    <ion-label stacked><h2><b>Kota/Kabupaten</b></h2></ion-label>
     <ion-select [(ngModel)]="lokasi">
       <ion-option value="nes">Bandung</ion-option>
       <ion-option value="n64">Bogor</ion-option>
@@ -24,15 +24,25 @@
   </ion-item>
 
 <ion-item>
-      <ion-label stacked>Luas Lahan</ion-label>
+      <ion-label stacked><h2><b>Luas Lahan</b></h2></ion-label>
       <ion-input type="text" #username></ion-input>
+    </ion-item>
+
+  <ion-item>
+      <ion-label><b>Mulai Kerja</b></ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+    
+  <ion-item>
+      <ion-label><b>Akhir Kerja</b></ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
     </ion-item>
 
 </ion-list>
 
 <ion-row responsive-sm>
 			<ion-col text-center>
-				<button ion-button round>Cari</button>
+				<button ion-button round (click)="opendaftarpetani()">Cari</button>
 			</ion-col>
 		</ion-row>
 </ion-content>

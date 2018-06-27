@@ -15,6 +15,8 @@ import { SlidesPage } from '../pages/slides/slides';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FormPage } from '../pages/form/form';
 import { ListPage } from '../pages/list/list';
+import { DaftarPetaniPage } from '../pages/daftar-petani/daftar-petani';
+import { ViewPetaniPage } from '../pages/view-petani/view-petani';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,7 +34,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SlidesPage,
     TabsPage,
     FormPage,
-    ListPage
+    ListPage,
+    DaftarPetaniPage,
+    ViewPetaniPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SlidesPage,
     TabsPage,
     FormPage,
-    ListPage
+    ListPage,
+    DaftarPetaniPage,
+    ViewPetaniPage
   ],
   providers: [
     StatusBar,
